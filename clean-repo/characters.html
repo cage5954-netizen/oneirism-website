@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meet the characters of Oneirism - A surreal traversal game." />
+  <title>Characters - Oneirism</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script defer src="js/script.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">Oneirism</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gameplay.html">Gameplay</a></li>
+        <li><a href="characters.html" class="active">Characters</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <section class="hero hero-characters">
+    <div class="hero-overlay">
+    <h1>THE WANDERERS</h1>
+    <h2>Their roles are unclear.</h2>
+    <h3>But they’re not gone.</h3>
+  </div>
+</section>
+
+  </section>
+
+  <!-- Characters -->
+  <main class="character-page">
+    <section class="character-grid">
+      <div class="character-card hidden">
+        <div class="character-image">
+          <img src="assets/images/Protagonist.jpg" alt="The Sleeper" />
+        </div>
+        <div class="character-text">
+          <h3>The Sleeper</h3>
+          <p>You play as a nameless dreamer caught in looping states. Agile, silent, uncertain. Every move is a guess. Every guess feels like memory.</p>
+        </div>
+      </div>
+
+      <div class="character-card hidden">
+        <div class="character-image">
+          <img src="assets/images/Fireman.png" alt="The Fireman" />
+        </div>
+        <div class="character-text">
+          <h3>The Fireman</h3>
+          <p>An ancient sigil that wakes and resets you. Is it helping? Watching? Judging? No one knows—but it glows, and you obey.</p>
+        </div>
+      </div>
+
+      <div class="character-card hidden">
+        <div class="character-image">
+          <img src="assets/images/The Forger.png" alt="The Forger" />
+        </div>
+        <div class="character-text">
+          <h3>The Forger</h3>
+          <p>It sees you. It doesn’t act, but it lingers. Its form is unclear, but its gaze is always exactly where you are.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Oneirism. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://x.com/44_mugen22381" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/@Niric-44" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://discord.gg/W3mAAQec" target="_blank"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reveal on Scroll -->
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    document.querySelectorAll('.character-card').forEach(el => {
+      el.classList.add('hidden');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

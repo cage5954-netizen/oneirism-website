@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Oneirism - A surreal indie game built in Unreal Engine 5." />
+  <title>Oneirism</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script defer src="js/script.js"></script>
+</head>
+
+<body>
+  <!-- Background Music -->
+  <audio id="bg-music" src="assets/audio/bg-music.mp3" loop></audio>
+
+  <!-- Music Toggle -->
+  <div id="music-toggle" title="Toggle Music"><i class="fas fa-volume-up"></i></div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-logo glow">ONEIRISM</div>
+    <p class="loader-text">Loading dream...</p>
+  </div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">Oneirism</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gameplay.html">Gameplay</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Then where are my dreams?</h1>
+      <h2>"Beyond where reality lies."</h2>
+      <h3>Then where is my reality?</h3>
+      <p>Where dreams end.</p>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="homepage-content">
+    <section class="highlights">
+      <h2>Gameplay Highlights</h2>
+      <div class="highlight-grid">
+        <div class="highlight-card">
+          <img src="assets/images/Spawn-Area.png" alt="Spawn area" />
+          <h4>Spawn & Obstacle Arena</h4>
+        </div>
+        <div class="highlight-card">
+          <img src="assets/images/Parkour Pillars.png" alt="Parkour zone" />
+          <h4>Vertical Parkour Zone</h4>
+        </div>
+        <div class="highlight-card">
+          <img src="assets/images/Lighting Axe from Above.png" alt="Lightning Axe" />
+          <h4>Lightning Axe Trap Event</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="trailer-news" id="trailer">
+      <div class="trailer-box">
+        <h2>Watch the Trailer</h2>
+        <video id="trailer-video" controls playsinline>
+          <source src="assets/videos/intro-edit.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="latest-news">
+        <h2>Latest News</h2>
+        <ul>
+          <li><strong>Aug 2025:</strong> Site goes live! Welcome to Oneirism.</li>
+          <li><strong>July 2025:</strong> High-res screenshots uploaded from test build.</li>
+          <li><strong>June 2025:</strong> Lightning Axe sequence successfully integrated.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Oneirism. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://x.com/44_mugen22381" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/@Niric-44" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://discord.gg/W3mAAQec" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

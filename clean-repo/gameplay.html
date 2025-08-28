@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gameplay breakdown of Oneirism — a surreal traversal game in Unreal Engine 5." />
+  <title>Gameplay - Oneirism</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script defer src="js/script.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">Oneirism</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gameplay.html" class="active">Gameplay</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Gameplay Content -->
+  <main class="gameplay">
+    <section class="intro">
+      <h2>The Gameplay of <em>Oneirism</em></h2>
+      <p>
+        There are no enemies. No health bars. Just you, a surreal traversal gauntlet, and a level that feels — for better or worse — alive.
+        <strong>Oneirism</strong> isn’t about fighting. It’s about understanding a space that changes as you move through it.
+      </p>
+    </section>
+
+    <!-- Stage Sections -->
+    <section class="stage">
+      <div class="stage-text">
+        <h3>Spawn & Core Traversal</h3>
+        <p>You awaken by a glowing rune. There’s no tutorial — but you’ll figure it out. </p>
+      </div>
+      <img src="assets/images/Spawn-Area.png" alt="Spawn and obstacle area" />
+    </section>
+
+    <section class="stage">
+      <div class="stage-text">
+        <h3>Weapon Slope & Rotating Blades</h3>
+        <p>The climb begins. A slope littered with archaic blades forces you to time each dash. Miss a beat? Back to the rune. Death here is educational.</p>
+      </div>
+      <img src="assets/images/Rekindling-Excursion.png" alt="Blade hazard puzzle" />
+    </section>
+
+    <section class="stage">
+      <div class="stage-text">
+        <h3>The Golden Chain Bridge</h3>
+        <p>A narrow chain bridge suspended over lava and flanked by rotating scythes. It's the midpoint — visually grand, mechanically unforgiving.</p>
+      </div>
+      <img src="assets/images/Chain Bridge.png" alt="Golden chain bridge screenshot" />
+    </section>
+
+    <section class="stage">
+      <div class="stage-text">
+        <h3>Vertical Parkour Pillars</h3>
+        <p>The level pivots to verticality. Using UE5’s mantle system, you climb ancient monoliths — no room for error, and absolutely no handrails.</p>
+      </div>
+      <img src="assets/images/Parkour Pillars.png" alt="Parkour pillar climbing" />
+    </section>
+
+    <section class="stage">
+      <div class="stage-text">
+        <h3>Lightning Axe Event</h3>
+        <p>Triggered by proximity, a suspended axe ascends, spins, and then <em>locks on</em> to your location.</p>
+      </div>
+      <img src="assets/images/Lighting Axe from Above.png" alt="Lightning axe hazard" />
+    </section>
+
+    <section class="stage">
+      <div class="stage-text">
+        <h3>Comedic Interlude</h3>
+        <p>You escaped — barely. Now you’re in a dim room with a plastic chair and a katana. An homage to Devil May Cry? Maybe. A palette cleanser? Definitely.</p>
+      </div>
+      <img src="assets/images/HighresScreenshot00025.png" alt="Chair interlude scene" />
+    </section>
+
+    <section class="stage">
+      <div class="stage-text">
+        <h3>Anti-Gravity Zone</h3>
+        <p>The world changes. You’re no longer in lava-land — it’s metal, glowing, and strange. The low-gravity puzzle tests your air control, as you leap onto floating blue cubes toward a summit in the stars.</p>
+      </div>
+      <img src="assets/images/Final Summit.png" alt="Sci-fi parkour section" />
+    </section>
+
+    <section class="stage">
+      <div class="stage-text">
+        <h3>Final Summit</h3>
+        <p>You arrive — A glowing rune, but will it answer you?</p>
+      </div>
+      <img src="assets/images/HighresScreenshot00031.png" alt="Final summit scene" />
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Oneirism. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://x.com/44_mugen22381" target="_blank" title="Follow on X (Twitter)"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com/@Niric-44" target="_blank" title="Watch on YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://discord.gg/W3mAAQec" target="_blank" title="Join our Discord"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reveal Animation Script -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    document.querySelectorAll('.stage').forEach(el => {
+      el.classList.add('hidden');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
