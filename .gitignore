@@ -1,0 +1,13 @@
+# Ignore large video files
+*.mp4
+*.mov
+*.avi
+*.zip
+
+# Ignore OS / editor files
+.DS_Store
+Thumbs.db
+*.log
+
+# Ignore node/npm stuff (if ever used)
+node_modules/
